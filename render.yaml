@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mutual-fund-assistant
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "python phase5_ui/api.py"
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false # User will need to set this in the Render dashboard
+      - key: PYTHON_VERSION
+        value: 3.12.4
