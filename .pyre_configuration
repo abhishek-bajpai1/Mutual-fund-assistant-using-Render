@@ -1,0 +1,15 @@
+{
+  "python_interpreter": "C:/Users/Pritesh Vijay Kabra/Desktop/Antigravity/Mutual fund RAG bot/.venv/Scripts/python.exe",
+  "source_directories": [
+    {
+      "import_root": "C:/Users/Pritesh Vijay Kabra/Desktop/Antigravity/Mutual fund RAG bot",
+      "source": "phase1_ingestion"
+    }
+  ],
+  "search_path": [
+    "C:/Users/Pritesh Vijay Kabra/Desktop/Antigravity/Mutual fund RAG bot/.venv/Lib/site-packages"
+  ],
+  "site_package_search_strategy": "all",
+  "strict": false
+}
+

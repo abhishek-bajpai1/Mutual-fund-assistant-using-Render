@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual fund Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <button class="icon-btn" id="fullscreen-btn" title="Toggle Fullscreen">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="#70757a" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+            </button>
+            <div class="header-title" id="header-title" style="cursor: pointer; user-select: none;">
+                Mutual fund Assistant
+                <svg id="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="#1a73e8"
+                    style="transition: transform 0.2s;">
+                    <path d="M7 10l5 5 5-5z" />
+                </svg>
+            </div>
+            <button class="icon-btn" style="visibility: hidden;">
+                <!-- Balances flex layout -->
+                <svg viewBox="0 0 24 24" width="20" height="20"></svg>
+            </button>
+        </header>
+
+        <!-- Dropdown Menu -->
+        <div id="dropdown-menu" class="dropdown-menu hidden">
+            <div class="dropdown-header">Covered Funds</div>
+            <a class="dropdown-item external-link"
+                href="https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth" target="_blank"
+                rel="noopener noreferrer">
+                Parag Parikh Flexi Cap Fund
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+            </a>
+            <a class="dropdown-item external-link"
+                href="https://groww.in/mutual-funds/parag-parikh-elss-tax-saver-fund-direct-growth" target="_blank"
+                rel="noopener noreferrer">
+                Parag Parikh ELSS Tax Saver Fund
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+            </a>
+            <a class="dropdown-item external-link"
+                href="https://groww.in/mutual-funds/parag-parikh-liquid-fund-direct-growth" target="_blank"
+                rel="noopener noreferrer">
+                Parag Parikh Liquid Fund
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+            </a>
+            <a class="dropdown-item external-link"
+                href="https://groww.in/mutual-funds/parag-parikh-conservative-hybrid-fund-direct-growth" target="_blank"
+                rel="noopener noreferrer">
+                Parag Parikh Conservative Hybrid Fund
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+            </a>
+            <a class="dropdown-item external-link"
+                href="https://groww.in/mutual-funds/parag-parikh-arbitrage-fund-direct-growth" target="_blank"
+                rel="noopener noreferrer">
+                Parag Parikh Arbitrage Fund
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+            </a>
+            <a class="dropdown-item external-link"
+                href="https://groww.in/mutual-funds/parag-parikh-dynamic-asset-allocation-fund-direct-growth"
+                target="_blank" rel="noopener noreferrer">
+                Parag Parikh Dynamic Asset Allocation Fund
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item external-link" href="https://groww.in/mutual-funds/amc/ppfas-mutual-funds"
+                target="_blank" rel="noopener noreferrer">
+                Official PPFAS Groww Page
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <main class="chat-area" id="chat-messages">
+
+            <div class="welcome-screen" id="welcome-screen">
+                <div class="sparkle-icon">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#669df6" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"></path>
+                    </svg>
+                </div>
+                <h2>Hi, I'm your Parag Parikh Mutual Fund Assistant! Ask me anything about our schemes.</h2>
+                <p class="beta-text">Information is sourced directly from <a
+                        href="https://groww.in/mutual-funds/amc/ppfas-mutual-funds" target="_blank"
+                        style="color: var(--blue); text-decoration: none;">Groww.in</a>.</p>
+                <p class="action-text">What would you like to know?</p>
+
+                <div class="suggestions-container">
+                    <button class="suggestion-btn"
+                        onclick="submitPrompt('What is the exit load for the Liquid Fund?')">What is the exit load for
+                        the Liquid Fund?</button>
+                    <button class="suggestion-btn"
+                        onclick="submitPrompt('Tell me the minimum SIP amount for the Flexi Cap Fund.')">Tell me the
+                        minimum SIP amount for the Flexi Cap Fund.</button>
+                    <button class="suggestion-btn"
+                        onclick="submitPrompt('What is the expense ratio of the Tax Saver Fund?')">What is the expense
+                        ratio of the Tax Saver Fund?</button>
+                    <button class="suggestion-btn"
+                        onclick="submitPrompt('Which benchmark index does the Conservative Hybrid Fund use?')">Which
+                        benchmark index does the Conservative Hybrid Fund use?</button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer Input -->
+        <footer class="app-footer">
+            <div class="powered-by">POWERED BY GENERATIVE AI</div>
+            <div class="input-wrapper">
+                <button class="icon-btn hamburger-btn" id="restart-btn" title="Restart Conversation">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="#5f6368" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <form id="chat-form" class="chat-form">
+                    <input type="text" id="user-input" placeholder="Enter a message" autocomplete="off" required>
+                    <button type="submit" id="send-btn" class="hidden">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#1a73e8" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
